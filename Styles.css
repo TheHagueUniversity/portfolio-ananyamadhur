@@ -86,15 +86,21 @@ section{
     padding: 15px;
     display:flex;
     flex-direction: row;
-    align-content: center;
-}
+    align-content: center; 
+
 }
 /*********Bespoke design *********/ 
-#bc {
-    color:white;
+#bespoke {
+    color: white;
+    font-weight: bold;
 }
 /*********Design and Creativity  *********/
 #dc {
+    color:white;
+}
+
+/*********Intercultural Competence *********/
+#IC {
     color:white;
 }
 /*********YLAC *********/
@@ -143,6 +149,32 @@ section{
     width: 100px;
     height: 100px;
     outline: none;
+}
+
+#unicef {
+    color:black;
+    text-align: center;
+}
+
+#pravah {
+    color:black;
+    text-align: center;
+}
+
+#oxfam {
+    color:black;
+    text-align: center;
+}
+
+#YLAC {
+color:black ;
+text-align: center;
+
+}
+
+#AF {
+    color:black;
+    text-align: center
 }
 
 /*********Education *********/
