@@ -72,14 +72,16 @@ section{
 #abt-text {
     width:400px;
     height: 400px;
-    margin: 100px;
+    margin: auto;
+    top: 150px;
     border-radius: 400px;
-    background: #018159;
+    background: #018159cc;
     text-align: center;
     color: white;
     font-size:16px;
     line-height: 25px;
     padding:30px;
+    position: relative;
 }
 /*********projects *********/ 
 .project-box {
