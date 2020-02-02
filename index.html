@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananya Madhur</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+    <script> 
+    function resize() {
+        var h=window.innerHeight;
+        var sections=document.getElementsByTagName("section");
+        for (i=0;i<sections.length;i++) {
+            sections[i].style.height=h+"px";
+        }
+    } 
+        
+        function workex(a) {
+            var rel= a.getAttribute("rel");
+            var rects=document.getElementsByClassName("rect");
+            for (i=0;i<rects.length;i++) {
+                rects[i].style.display="none";
+            }
+            
+        document.getElementById("r"+rel).style.display="block";
+        
+        }
+    </script>
+    
+</head>
+    
+<body onload="resize()" onresize="resize()"> 
+
+    <main>
+        <header>
+            <div class="content-wrap">
+                <a class="btn" href="#h">Home</a>
+                <a class="btn" href="#abt">About Me</a>
+                <a class="btn" href="#p">Projects</a>
+                <a class="btn" href="#w">Work Experience</a>
+                <a class="btn" href="#e">Education</a>
+                <a class="btn" href="#c">Contact</a>
+            </div>
+
+        </header>
+    <!-----------Home ---------> 
+        
+    <section class="Home" id="h">
+            
+    </section>
+        
+   <!------------About Me --------->  
+        
+    <section class="About Me" id="abt">
+     <div id="abt-text"> I am from Mumbai, India,<br>
+ currently studying at the Hague<br>
+ University of Applied Sciences, majoring <br>
+in UX design. <br><br>
+
+My strong sense of empathy along with the<br>
+ tools used for design drives me as a UX designer.<br><br>
+
+ I am passionate about using technology for<br> 
+good.I like to volunteer at Non-Profit<br>
+
+ Organisations and also expressing myself <br>
+through singing and dancing.  </div>
+    </section>
+        
+        
+<!------------Projects ---------> 
+    
+    <section class="Projects" id="p">
+        <div class="project-box"> 
+            
+            
+<!-------------- bespoke project------------>            
+            
+            <div class="thumbnail" style="transform-origin: center center; transform: scale(1.5,1.5)">
+                <a href="bespoke%20design.html"><img src="Images/bespoke.png"> </a>
+                <div> Bespoke design </div>
+            </div>
+        
+       
+            
+<!-------------------- DC --------------------->
+            
+            <div class="thumbnail" style="transform-origin: center center; transform: scale(1.5,1.5)">
+                <a href="design%20and%20creativity.html"><img src="Images/dc.png"></a>
+                <div>Design and Creativity</div>
+            </div>
+            
+
+ <!---------------------- IC------------------------>
+            
+            <div class="thumbnail" style="transform-origin: center center; transform: scale(1.5,1.5)">
+                <a href="intercultural%20competence.html"><img src="Images/IC.png"></a>
+                <div>Intercultural Competence</div>
+            </div>
+        
+        
+        
+<!---------------- Ylac project ---------------------->
+        
+          <div class="thumbnail" style="transform-origin: center center; transform: scale(1.5,1.5)">
+              <a href="YLAC.html"><img src="Images/ylac.jpg"></a>
+                <div>Awareness on social issues</div>
+            </div>
+        </div> 
+        </section>
+    
+        
+        
+<!------------Work Experience ---------> 
+    <section class="Work Experience" id="w">
+        <div class="work-exp"> 
+            
+    <!-------------- Unicef ------------>
+            <div class="elements" >
+                <a href="#w" onclick="workex(this)" rel="unicef"> <img src="Images/unicef.png" id="unicef"> </a>
+                <div>Awareness and Fundraising</div>
+                
+            </div>
+            
+            
+      <!-------------Pravh ------------>
+            <div class="elements">
+                <a href="#w" onclick="workex(this)" rel="pravah"> <img src="Images/Pravah.jpg" id="pravah"> </a>
+            
+                <div>Research project on Dalit community</div>
+            </div>
+        
+            
+   <!----------------Oxfam --------------->
+            <div class="elements">
+                <a href="#w" onclick="workex(this)" rel="oxfam"><img src="Images/Oxfam.png" id="oxfam"></a>
+                
+                <div >Team Manager for Udayan</div>
+            </div>
+            
+            
+    <!-------------YLAC ---------------->        
+            <div class="elements">
+                <a href="#w" onclick="workex(this)" rel="YLAC"><img src="Images/YLAC-Reflect-Act-Transform-smaller-min.png" id="YLAC"> </a>
+                
+                <div >Content Creator for Social Media Advocacy</div>
+            </div>    
+    
+            
+    <!-----------------ashish foundation ------------>        
+            <div class="elements">
+                <a href="#w" onclick="workex(this)" rel="AF"><img src="Images/Ashish%20Foundation.jpeg" id="AF"></a>
+                
+                <div >Helping Autistic children</div>
+            </div>
+         
+        </div> 
+        
+        <div class="rect" id="runicef"><table border=0> <tr><td> <p>  I volunteered for UNICEF Netherlands for its Jordan project which is running currently.
+The Jordon project was about migrants who are not getting education so Unicef took an
+initiative for helping those migrants to get education. We as volunteers had to speak to other 
+            people about their project and Fund raise for the event.</p>  </td> <td> 
+            
+            <img src="Images/jordan.jpg"></td></tr> 
+            </table>
+        </div>
+        
+         <div class="rect" style="display: none" id="rpravah"><table border=0> <tr><td><p>  I was selected for the SMILE(Student Mobilisation Initiative for Learning through Exposure) internship of Pravah in 2019.
+Pravah is a Delhi based organisation which works with young people to impact issues of social justice through 
+youth citizenship action .
+
+In this internship, we had a 5 day camp and then we were sent to different organisation 
+to work with them. I was sent to Manthan Kotri, Rajasthan; this organisation work on water conservation. I had to learn 
+about one of their community and had to write a report about what did I see and learn from the community.
+I also helped the organisation to conduct their annual meet with the fellows who were at Manthan earlier and to translate their 
+work into English.</p> </td> <td> 
+            
+            <img src="Images/pravah1.png"></td></tr> 
+            </table>
+        </div>
+        
+        <div class="rect" style="display: none" id="roxfam"> <table border=0> <tr><td><p>  Team manager and fund mobiliser of Team Udayan (Sponsored by NGO Udayan centre for Collaborative
+Learning). Managed a Team of four walkers in terms of their training schedules; diet; logistics; planning; material 
+Support and constant field back up for the continues 33 hours the team was on the road. Two of the team 
+Members finished the walk successfully while another did 50 kilometers. The walk being a fund raiser I could 
+Bring the team in the top 5 teams mobilising over 2Million Rupees through crowd funding. Team was given 
+A special recognition for this.</p>
+            </td> <td> <img src="Images/oxfamwinner.jpg"></td></tr> 
+            </table>
+        </div>
+        
+       <div class="rect" style="display: none" id="rYLAC"> <table border=0> <tr><td> <p>  Young Leaders for Active Citizenship (YLAC) is an initiative to build capacity of youngsters 
+through active citizenship on issues like Diversity, Mental wellness-being, Sustainability,
+Gender Equality, Body positivity and Bullying. It is driven by eminent citizens like Shashi 
+Tharoor, Jay Panda, and a group of Harvard and Oxford Alumni. I was privileged to have been 
+Selected as one of the 30 Counter Speech Fellows after a rigorous selection process
+From across the country. Was rated one of the best performers consistently by peers. </p> </td> <td> 
+            
+            <img src="Images/ylacwriting.jpg"></td></tr> 
+            </table>
+        </div>
+        
+        <div class="rect" style="display: none" id="rAF"><table border=0> <tr><td> <p>Aashish Centre is a vocational school for differently-abled children. The school trained them with some life skills and vocational training. I volunteered at Aashish center during the summer break between class 10 and high school. At the center, I learnt from the facilitators and assisted them with organizing classes and activities. For example, I arranged the individual timetables for each student so that they could keep track of their tasks for the day. I helped conduct activities like colour differentiation, movement exercises for psycho motor skills, and visits to public places to train social interaction skills. I learnt how children on the autistic spectrum have difficulty doing routine tasks and interactions, and that as a society we can do better at accepting those different from us. </p> </td> <td> 
+            
+            <img src="Images/abhi.jpeg"></td></tr> 
+            </table>
+        </div>
+        
+        
+    </section>
+    
+        
+    <!------------Education --------->     
+        
+    <section class="Education" id="e">
+        <div class="THUAS">
+            <img src="Images/THUAS.png" width="400px">
+            <p>2019 <br>
+             User Experience <br>
+            Bachelor of Science</p>
+        </div>
+        
+        
+        <div class="RFS">
+            <img src="Images/Rfs.png" width="400">
+            <p> 2017-2019<br>
+                High School</p>
+        </div>
+        
+        <div class="downimg"><img src="Images/education%20.png"></div>
+    </section>
+        
+        
+    <!------------Contacts ---------> 
+    
+    <section class="Contact" id="c">
+        <div class="contact">
+            <p> Let's get in touch :) </p>
+            <p><textarea rows="10" cols="200">type your message here </textarea></p>
+                
+            <p style="text-align: right"><button> Send </button></p>
+            
+        </div>
+     
+
+       <div class="footer"> 
+         <img src="Images/outlook.png" width="50px" height="50px" class="center">
+        <img src="Images/linkdeln.png" width="50px" height="50px" class="center">
+        <img src="Images/insta.png" width="50px" height="50px"    class="center"> 
+        
+    </div>
+     
+            
+    </section>
+</main>
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
