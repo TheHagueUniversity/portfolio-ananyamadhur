@@ -87,21 +87,71 @@ section{
     display:flex;
     flex-direction: row;
     align-content: center; 
-
+    width: 100%;
 }
 /*********Bespoke design *********/ 
 #bespoke {
-    color: white;
-    font-weight: bold;
+    color:white;
 }
+
+#bes{
+    color:white;
+    padding-top:15px;
+    
+}
+
+.all {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.firsttwo {
+    text-align: center;
+    margin-right: 500px;
+    margin-left: 500px;
+    
+}
+
+
+.bespoke-design {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+
 /*********Design and Creativity  *********/
 #dc {
     color:white;
 }
 
+#d-c {
+    color:white;
+    padding-top:15px;
+}
+
+.design-and-creativity {
+     padding-left: 40px;
+ padding-right: 40px;
+    text-align: center;
+}
 /*********Intercultural Competence *********/
 #IC {
     color:white;
+}
+
+#i-c {
+     color:white;
+    padding-top:15px;
+    
+}
+
+.intercultural-competence{
+    padding-left: 40px;
+ padding-right: 40px;
+    text-align: center;
+    
 }
 /*********YLAC *********/
 #ylac {
@@ -109,22 +159,56 @@ section{
 }
 
 .thumbnail {
-    width: 50%
+    width: 50%;
     height: 190px;
     text-align: center;
     margin: 50px;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex-grow: 1;      
+    flex-grow: 1; 
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+#p .thumbnail{
+    width:45%;
+    margin:0;
+    height: 250px;
+    padding-top: 50px;
 }
 
+#p .project-box{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    padding-top: 80px;
+    
+}
 .thumbnail img {
     width: 100px;
     height: 100px;
     outline: none;
+    text-align: center;
 }
 
+.thumbnail div {
+    color:white;
+    text-align: center;
+}
+
+#project {
+    color:white;
+    padding-top:15px;
+    
+}
+
+.ylac {
+    padding-left: 40px;
+ padding-right: 40px;
+    text-align: center;
+    
+}
 /*********work experience *********/
 .work-exp {
     padding: 15px;
@@ -140,7 +224,7 @@ section{
     text-align: center;
     margin: 50px;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 1;
 }
@@ -149,6 +233,7 @@ section{
     width: 100px;
     height: 100px;
     outline: none;
+    margin:auto;
 }
 
 #unicef {
@@ -167,8 +252,8 @@ section{
 }
 
 #YLAC {
-color:black ;
-text-align: center;
+    color:black ;
+    text-align: center;
 
 }
 
@@ -177,6 +262,42 @@ text-align: center;
     text-align: center
 }
 
+#w {
+    background: white;
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+#w .rect {
+    background: #018159;
+    width: 100%;
+    padding: 20px;
+    min-height:400px;
+}
+
+.rect p {
+    color:white;
+    text-align: justify;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+#w .elements {
+    text-align: center;
+    
+}
+
+.rect img {
+    width: 300px;
+    max-height: 400px;
+}
+
+.rect td:nth-child(1) {
+    width: 60%;
+    
+}
 /*********Education *********/
 
 .THUAS p {
@@ -195,8 +316,41 @@ text-align: center;
     text-align: center;
 }
 
+#e {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    width: 100%;
+    justify-content: center;
+    align-content: stretch;
+    height: 100%;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    
 
+}
 
+#e .THUAS {
+    width: 50%;
+
+}
+
+#e .RFS {
+    width: 50%;
+
+}
+
+#e .downimg {
+    width: 100%;
+    position: relative;
+    
+}
+
+#e .downimg img {
+    margin: auto;
+}
 /*********contact *********/
 #c {
     background-image: url(Images/contact.jpeg);
@@ -249,11 +403,10 @@ text-align: center;
 }
 
 .center {
-    display: block;
+    
   margin-left: auto;
   margin-right: auto;
     text-align: center;
 }
 
 
-}
