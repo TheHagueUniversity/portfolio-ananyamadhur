@@ -8,10 +8,6 @@ body {
     padding: 0;
 }
 
-h2 {
-    font-family: bebas neue;
-}
-
 .content-wrap {
     float: right;
     
@@ -64,9 +60,7 @@ section{
     background-image: url(Images/aboutme.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: center center;
-    
-    
+    background-position: center center;    
 }
 
 #abt-text {
@@ -104,15 +98,10 @@ section{
 
 .all {
     text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 .firsttwo {
     text-align: center;
-    margin-right: 500px;
-    margin-left: 500px;
-    
 }
 
 
@@ -134,8 +123,8 @@ section{
 }
 
 .design-and-creativity {
-     padding-left: 40px;
- padding-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     text-align: center;
 }
 /*********Intercultural Competence *********/
@@ -144,14 +133,14 @@ section{
 }
 
 #i-c {
-     color:white;
+    color:white;
     padding-top:15px;
     
 }
 
 .intercultural-competence{
     padding-left: 40px;
- padding-right: 40px;
+    padding-right: 40px;
     text-align: center;
     
 }
@@ -207,7 +196,7 @@ section{
 
 .ylac {
     padding-left: 40px;
- padding-right: 40px;
+    padding-right: 40px;
     text-align: center;
     
 }
@@ -408,7 +397,7 @@ section{
     
   margin-left: auto;
   margin-right: auto;
-    text-align: center;
+text-align: center;
 }
 
 
