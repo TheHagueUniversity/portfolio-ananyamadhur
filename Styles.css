@@ -6,6 +6,7 @@ body {
     font-family: PT,sans-serif;
     margin: 0;
     padding: 0;
+
 }
 
 .content-wrap {
@@ -50,7 +51,7 @@ section{
 
 /*********Home *********/
 #h {
-    background-image: url(Images/Home.png);
+    background-image: url(Images/Home%20page%20%E2%80%93%203.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
