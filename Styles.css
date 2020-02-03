@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #018159;
+    background-color: #009457;
     font-family: PT,sans-serif;
     margin: 0;
     padding: 0;
@@ -262,7 +262,7 @@ section{
 }
 
 #w .rect {
-    background: #018159;
+    background: #009457;
     width: 100%;
     padding: 20px;
     min-height:400px;
