@@ -304,6 +304,9 @@ section{
     text-align: right center;
 }
 
+.downimg {
+    text-align: center;
+}
 
 #e {
     display: flex;
