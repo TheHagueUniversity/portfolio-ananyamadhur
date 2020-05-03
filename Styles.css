@@ -173,7 +173,6 @@ section{
 #p .project-box{
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: stretch;
     padding-top: 80px;
     
 }
