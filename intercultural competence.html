@@ -14,23 +14,51 @@
             sections[i].style.height=h+"px";
         }
     }
+        function showmenu() {
+            document.getElementById("mobilemenu").style.display="block";
+            document.getElementById("hbm").src="Images/cancel.png";
+            document.getElementById("hbm").onclick=hidemenu;
+        }
+        
+        function hidemenu() {
+            document.getElementById("mobilemenu").style.display="none"; 
+            document.getElementById("hbm").src="Images/ham.png";
+            document.getElementById("hbm").onclick=showmenu;
+        }
+        
     </script>
 </head>
     
 <body> 
 
     <main>
-        <header>
+        <header id="topmenu">
             <div class="content-wrap">
-                <a class="btn" href="index.html">Home</a>
-                <a class="btn" href="index.html">About Me</a>
-                <a class="btn" href="index.html">Projects</a>
-                <a class="btn" href="index.html">Work Experience</a>
-                <a class="btn" href="index.html">Education</a>
-                <a class="btn" href="index.html">Contact</a>
+                <a class="btn"  href="index.html#h">Home</a>
+                <a class="btn"  href="index.html#abt">About Me</a>
+                <a class="btn"  href="index.html#p">Projects</a>
+                <a class="btn"  href="index.html#w">Work Experience</a>
+                <a class="btn"  href="index.html#e">Education</a>
+                <a class="btn"  href="index.html#c">Contact</a>
             </div>
 
         </header>
+        
+        <!------------- Mobile menu ----------------->
+    <div class="mobile-container">
+            <img src="Images/ham.png" id="hbm" height="100" width="100" onclick="showmenu()" style="cursor: pointer">
+                <div id="mobilemenu"> 
+                    <ul>
+                        <li><a class="btn"  href="index.html#home">Home</a></li>
+                        <li><a class="btn"  href="index.html#aboutme">About Me</a></li>
+                        <li><a class="btn"  href="index.html#projects">Projects</a></li>
+                        <li><a class="btn"  href="index.html#workexp">Work Experience</a></li>
+                        <li><a class="btn"  href="index.html#education">Education</a></li>
+                        <li><a class="btn"  href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+        </div>    
         
  <section class="intercultural-competence" id="i-c">
 <div class="project-box"> 
@@ -38,8 +66,8 @@
             
 <!-------------- bespoke project------------>            
             
-            <div class="thumbnail">
-                <a href="bespoke%20design.html"><img src="Images/bespoke.png"> </a>
+            <div class="thumbnail col-4">
+                <a href="bespoke%20design.html"><img src="Images/bespoke.png" style="max-width: 80% ; max-height: 100%"> </a>
                 <div> Bespoke design </div>
             </div>
         
@@ -47,16 +75,16 @@
             
 <!-------------------- DC --------------------->
             
-            <div class="thumbnail">
-                <a href="design%20and%20creativity.html"><img src="Images/dc.png"></a>
+            <div class="thumbnail col-4">
+                <a href="design%20and%20creativity.html"><img src="Images/dc.png" style="max-width: 80% ; max-height: 100%"></a>
                 <div>Design and Creativity</div>
             </div>
             
 
  <!---------------------- IC------------------------>
             
-            <div class="thumbnail" style="transform-origin: center center; transform: scale(1.5,1.5)">
-                    <a href="intercultural%20competence.html"><img src="Images/IC.png"></a>
+            <div class="thumbnail col-4" style="transform-origin: center center; transform: scale(1.5,1.5)">
+                    <a href="intercultural%20competence.html"><img src="Images/IC.png" style="max-width: 80% ; max-height: 100%"></a>
                 <div>Intercultural Competence</div>
             </div>
         
@@ -64,8 +92,8 @@
         
 <!---------------- Ylac project ---------------------->
         
-          <div class="thumbnail">
-               <a href="YLAC.html"><img src="Images/ylac.jpg"></a>
+          <div class="thumbnail col-4">
+               <a href="YLAC.html"><img src="Images/ylac.jpg" style="max-width: 80% ; max-height: 100%"></a>
                 <div>Awareness on social issues</div>
             </div>
 </div> 
@@ -76,7 +104,7 @@ communication barriers, objectives and learning goals and achievements. <br><br>
     
     As a result of writing this reflective report, I became aware of the importance of intercultural competence in design. I can now use frameworks like the Hofstede's dimensions and research on culture-specific communication styles and barriers to understand and design for different cultural, social and geographical contexts.<br><br></p>
     
-<a href="Images/Intercultural%20sensitivity%20Final%20docx.docx"><img src="Images/communication.png" width="500px"></a><br>
+<a href="Images/Intercultural%20sensitivity%20Final%20docx.docx"><img src="Images/communication.png" width="500px" class="col-6"></a><br>
     The position of my country India on Lewis Model<br>
     <i> Click the image to download the report.</i>
 

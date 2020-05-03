@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananya Madhur</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+    <script> 
+    function resize() {
+        var h=window.innerHeight;
+        var sections=document.getElementsByTagName("section");
+        for (i=0;i<sections.length;i++) {
+            sections[i].style.height=h+"px";
+        }
+    }
+        function showmenu() {
+            document.getElementById("mobilemenu").style.display="block";
+            document.getElementById("hbm").src="Images/cancel.png";
+            document.getElementById("hbm").onclick=hidemenu;
+        }
+        
+        function hidemenu() {
+            document.getElementById("mobilemenu").style.display="none"; 
+            document.getElementById("hbm").src="Images/ham.png";
+            document.getElementById("hbm").onclick=showmenu;
+        }
+        
+    </script>
+</head>
+    
+<body style="background: white"> 
+
+    <main>
+        <header id="topmenu">
+            <div class="content-wrap">
+                <a class="btn"  href="index.html#h">Home</a>
+                <a class="btn"  href="index.html#abt">About Me</a>
+                <a class="btn"  href="index.html#p">Projects</a>
+                <a class="btn"  href="index.html#w">Work Experience</a>
+                <a class="btn"  href="index.html#e">Education</a>
+                <a class="btn"  href="index.html#c">Contact</a>
+            </div>
+
+        </header>
+        
+        <!------------- Mobile menu ----------------->
+    <div class="mobile-container">
+            <img src="Images/ham.png" id="hbm" height="100" width="100" onclick="showmenu()" style="cursor: pointer">
+                <div id="mobilemenu"> 
+                    <ul>
+                        <li><a class="btn"  href="index.html#home">Home</a></li>
+                        <li><a class="btn"  href="index.html#aboutme">About Me</a></li>
+                        <li><a class="btn"  href="index.html#projects">Projects</a></li>
+                        <li><a class="btn"  href="index.html#workexp">Work Experience</a></li>
+                        <li><a class="btn"  href="index.html#education">Education</a></li>
+                        <li><a class="btn"  href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+        </div>    
+        
+    <section class="oxfam" id="o">
+     <div class="work-exp" style=" align-content: center;flex-wrap: nowrap"> 
+            
+            
+<!-------------- UNICEF------------>            
+            
+            <div class="elements col-4">
+                <a href="unicef.html"><img src="Images/unicef.png" style="max-width: 80% ; max-height: 100%"> </a>
+                <div> Awareness and Fundraising </div>
+            </div>
+        
+       
+            
+<!-------------------- Pravah --------------------->
+            
+           <div class="elements col-4">
+                <a href="pravah.html"><img src="Images/Pravah.jpg" style="max-width: 80% ; max-height: 100%"></a>
+                <div>Research Project on Dalit Community</div>
+            </div>
+            
+
+ <!----------------------Oxfam------------------------>
+            
+            <div class="elements col-4" style="transform-origin: center center; transform: scale(1.5,1.5)">
+                <a href="oxfam.html"><img src="Images/Oxfam.png" style="max-width: 80% ; max-height: 100%"></a>
+                <div>Team Manager for Udayan</div>
+            </div>
+        
+        
+        
+<!---------------- Ylac project ---------------------->
+        
+            <div class="elements col-4">
+              <a href="ylacworkexperience.html"><img src="Images/YLAC-Reflect-Act-Transform-smaller-min.png" style="max-width: 80% ; max-height: 100%"></a>
+                <div>Content Creator for Social Media Advocacy</div>
+            </div>
+        
+<!---------------- Ashish Foundation---------------------->
+        
+            <div class="elements col-4">
+              <a href="ashish.html"><img src="Images/Ashish%20Foundation.jpeg" style="max-width: 80% ; max-height: 100%"></a>
+                <div>Helping Autistic Children</div>
+            </div>
+        </div> 
+        
+        <div class="rect" id="roxfam"> 
+            <div class="col-6">
+                <img src="Images/oxfamwinner.jpg"> 
+            </div>
+            
+            <div style="color:white" class="col-6"> I was the Team Manager and fund mobiliser of Team Udayan (Sponsored by NGO Udayan centre for Collaborative Learning). I managed a team of four walkers in terms of their training schedules; diet; logistics; planning; material support and constant field backup for the continuous 33 hours the team was on the road. Two of the team members finished the walk successfully while the others did 50 kilometers. The walk being a fund raiser, I could bring the team among the top 5 teams,  mobilising over 2 Million Rupees through crowd funding. The team was given a special recognition for this.</div>
+             
+
+        </div>
+    </section>

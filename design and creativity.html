@@ -14,31 +14,60 @@
             sections[i].style.height=h+"px";
         }
     }
+        function showmenu() {
+            document.getElementById("mobilemenu").style.display="block";
+            document.getElementById("hbm").src="Images/cancel.png";
+            document.getElementById("hbm").onclick=hidemenu;
+        }
+        
+        function hidemenu() {
+            document.getElementById("mobilemenu").style.display="none"; 
+            document.getElementById("hbm").src="Images/ham.png";
+            document.getElementById("hbm").onclick=showmenu;
+        }
+        
     </script>
 </head>
     
 <body> 
 
-    <main>
-        <header>
+   <main>
+        <header id="topmenu">
             <div class="content-wrap">
-               <a class="btn" href="index.html">Home</a>
-                <a class="btn" href="index.html">About Me</a>
-                <a class="btn" href="index.html">Projects</a>
-                <a class="btn" href="index.html">Work Experience</a>
-                <a class="btn" href="index.html">Education</a>
-                <a class="btn" href="index.html">Contact</a>
+                <a class="btn"  href="index.html#h">Home</a>
+                <a class="btn"  href="index.html#abt">About Me</a>
+                <a class="btn"  href="index.html#p">Projects</a>
+                <a class="btn"  href="index.html#w">Work Experience</a>
+                <a class="btn"  href="index.html#e">Education</a>
+                <a class="btn"  href="index.html#c">Contact</a>
             </div>
 
         </header>
+        
+        <!------------- Mobile menu ----------------->
+    <div class="mobile-container">
+            <img src="Images/ham.png" id="hbm" height="100" width="100" onclick="showmenu()" style="cursor: pointer">
+                <div id="mobilemenu"> 
+                    <ul>
+                        <li><a class="btn"  href="index.html#home">Home</a></li>
+                        <li><a class="btn"  href="index.html#aboutme">About Me</a></li>
+                        <li><a class="btn"  href="index.html#projects">Projects</a></li>
+                        <li><a class="btn"  href="index.html#workexp">Work Experience</a></li>
+                        <li><a class="btn"  href="index.html#education">Education</a></li>
+                        <li><a class="btn"  href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+        </div>    
+        
       <section class="design-and-creativity" id="d-c">
         <div class="project-box"> 
             
             
 <!-------------- bespoke project------------>            
             
-            <div class="thumbnail">
-               <a href="bespoke%20design.html"><img src="Images/bespoke.png"> </a>
+            <div class="thumbnail col-4">
+               <a href="bespoke%20design.html"><img src="Images/bespoke.png" style="max-width: 80% ; max-height: 100%"> </a>
                 <div> Bespoke design </div>
             </div>
         
@@ -46,16 +75,16 @@
             
 <!-------------------- DC --------------------->
             
-            <div class="thumbnail" style="transform-origin: center center; transform: scale(1.5,1.5)">
-              <a href="design%20and%20creativity.html"><img src="Images/dc.png"></a>
+            <div class="thumbnail col-4" style="transform-origin: center center; transform: scale(1.5,1.5)">
+              <a href="design%20and%20creativity.html"><img src="Images/dc.png" style="max-width: 80% ; max-height: 100%"></a>
                 <div>Design and Creativity</div>
             </div>
             
 
  <!---------------------- IC------------------------>
             
-            <div class="thumbnail">
-               <a href="intercultural%20competence.html"><img src="Images/IC.png"></a>
+            <div class="thumbnail col-4">
+               <a href="intercultural%20competence.html"><img src="Images/IC.png" style="max-width: 80% ; max-height: 100%"></a>
                 <div>Intercultural Competence</div>
             </div>
         
@@ -63,8 +92,8 @@
         
 <!---------------- Ylac project ---------------------->
         
-          <div class="thumbnail">
-               <a href="YLAC.html"><img src="Images/ylac.jpg"></a>
+          <div class="thumbnail col-4">
+               <a href="YLAC.html"><img src="Images/ylac.jpg" style="max-width: 80% ; max-height: 100%"></a>
                 <div>Awareness on social issues</div>
             </div>
         </div> 
@@ -76,15 +105,15 @@ includes my life story, experience of Linz trip and storyboards. Whereas, the ap
     techniques of diverging and converging. <br><br></p>
 
 <h1 style="text-align: justify">Portfolio</h1> 
-<img src="Images/lifestory.png" width="700px" class="dcall"><br>
+<img src="Images/lifestory.png" width="700px" class="dcall col-5"><br>
 I made a timeline of important events which took
 place in my life between 2006 and 2019<br><br>
         
-<img src="Images/linz.png" width="700px" class="dcall"><br>
+<img src="Images/linz.png" width="700px" class="dcall col-5"><br>
 I made a sketch of my experience in Linz<br><br>
         
-<img src="Images/dcst.png" width="500px">
-<img src="Images/dcst1.png" width="500px"><br>
+<img src="Images/dcst.png" width="500px" class="col-5">
+<img src="Images/dcst1.png" width="500px" class="col-5"><br>
 These are the storyboards which I created for my final concept <br><br>
         
 <h1 style="text-align: justify">

@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="Styles.css">
     <script> 
     function resize() {
-        var h=window.innerHeight;
+        var h=window.innerHeight + "px";
+        if(window.innerWidth<800) h="auto";
         var sections=document.getElementsByTagName("section");
         for (i=0;i<sections.length;i++) {
-            sections[i].style.height=h+"px";
+            sections[i].style.height=h;
         }
     } 
 
@@ -26,6 +27,18 @@
 
         }
         
+        function showmenu() {
+            document.getElementById("mobilemenu").style.display="block";
+            document.getElementById("hbm").src="Images/cancel.png";
+            document.getElementById("hbm").onclick=hidemenu;
+        }
+        
+        function hidemenu() {
+            document.getElementById("mobilemenu").style.display="none"; 
+            document.getElementById("hbm").src="Images/ham.png";
+            document.getElementById("hbm").onclick=showmenu;
+        }
+        
     </script>
 
 </head>
@@ -33,17 +46,35 @@
 <body onload="resize()" onresize="resize()"> 
 
     <main>
-        <header>
+        <header id="topmenu">
             <div class="content-wrap">
-                <a class="btn" href="#h">Home</a>
-                <a class="btn" href="#abt">About Me</a>
-                <a class="btn" href="#p">Projects</a>
-                <a class="btn" href="#w">Work Experience</a>
-                <a class="btn" href="#e">Education</a>
-                <a class="btn" href="#c">Contact</a>
+                <a class="btn"  href="#h">Home</a>
+                <a class="btn"  href="#abt">About Me</a>
+                <a class="btn"  href="#p">Projects</a>
+                <a class="btn"  href="#w">Work Experience</a>
+                <a class="btn"  href="#e">Education</a>
+                <a class="btn"  href="#c">Contact</a>
             </div>
 
         </header>
+        
+    <!---------mobile menu--------->
+        <div class="mobile-container">
+            <img src="Images/ham.png" id="hbm" height="100" width="100" onclick="showmenu()" style="cursor: pointer">
+                <div id="mobilemenu"> 
+                    <ul>
+                        <li><a class="btn"  href="#h">Home</a></li>
+                        <li><a class="btn"  href="#abt">About Me</a></li>
+                        <li><a class="btn"  href="#p">Projects</a></li>
+                        <li><a class="btn"  href="#w">Work Experience</a></li>
+                        <li><a class="btn"  href="#e">Education</a></li>
+                        <li><a class="btn"  href="#c">Contact</a></li>
+                    </ul>
+                </div>
+                
+        </div>
+
+        
     <!-----------Home ---------> 
 
     <section class="Home" id="h">
@@ -78,7 +109,7 @@ through singing and dancing.  </div>
 
 <!-------------- bespoke project------------>            
 
-            <div class="thumbnail" style="transform-origin: center center; transform: scale(1.5,1.5)">
+            <div class="thumbnail col-6" style="transform-origin: center center; transform: scale(1.5,1.5)">
                 <a href="bespoke%20design.html"><img src="Images/bespoke.png"> </a>
                 <div> Bespoke design </div>
             </div>
@@ -87,7 +118,7 @@ through singing and dancing.  </div>
 
 <!-------------------- DC --------------------->
 
-            <div class="thumbnail" style="transform-origin: center center; transform: scale(1.5,1.5)">
+            <div class="thumbnail col-6" style="transform-origin: center center; transform: scale(1.5,1.5)">
                 <a href="design%20and%20creativity.html"><img src="Images/dc.png"></a>
                 <div>Design and Creativity</div>
             </div>
@@ -95,7 +126,7 @@ through singing and dancing.  </div>
 
  <!---------------------- IC------------------------>
 
-            <div class="thumbnail" style="transform-origin: center center; transform: scale(1.5,1.5)">
+            <div class="thumbnail col-6" style="transform-origin: center center; transform: scale(1.5,1.5)">
                 <a href="intercultural%20competence.html"><img src="Images/IC.png"></a>
                 <div>Intercultural Competence</div>
             </div>
@@ -104,7 +135,7 @@ through singing and dancing.  </div>
 
 <!---------------- Ylac project ---------------------->
 
-          <div class="thumbnail" style="transform-origin: center center; transform: scale(1.5,1.5)">
+          <div class="thumbnail col-6" style="transform-origin: center center; transform: scale(1.5,1.5)">
               <a href="YLAC.html"><img src="Images/ylac.jpg"></a>
                 <div>Awareness on social issues</div>
             </div>
@@ -112,83 +143,46 @@ through singing and dancing.  </div>
         </section>
 
 
-
 <!------------Work Experience ---------> 
     <section class="Work Experience" id="w">
         <div class="work-exp"> 
 
     <!-------------- Unicef ------------>
-            <div class="elements" >
-                <a href="#w" onclick="workex(this)" rel="unicef"> <img src="Images/unicef.png" id="unicef"> </a>
+            <div class="col-4 elements">
+                 <a href="unicef.html"> <img src="Images/unicef.png" id="unicef"> </a>
                 <div>Awareness and Fundraising</div>
 
             </div>
 
 
       <!-------------Pravh ------------>
-            <div class="elements">
-                <a href="#w" onclick="workex(this)" rel="pravah"> <img src="Images/Pravah.jpg" id="pravah"> </a>
-
+            <div class="col-4 elements">
+                  <a href="pravah.html"> <img src="Images/Pravah.jpg" id="pravah"> </a>
                 <div>Research Project on Dalit Community</div>
             </div>
 
 
    <!----------------Oxfam --------------->
-            <div class="elements">
-                <a href="#w" onclick="workex(this)" rel="oxfam"><img src="Images/Oxfam.png" id="oxfam"></a>
-
+            <div class="col-4 elements">
+                 <a href="oxfam.html"> <img src="Images/Oxfam.png" id="oxfam"></a>
                 <div >Team Manager for Udayan</div>
             </div>
 
 
     <!-------------YLAC ---------------->        
-            <div class="elements">
-                <a href="#w" onclick="workex(this)" rel="YLAC"><img src="Images/YLAC-Reflect-Act-Transform-smaller-min.png" id="YLAC"> </a>
-
+            <div class="col-6 elements">
+               <a href="ylacworkexperience.html"> <img src="Images/YLAC-Reflect-Act-Transform-smaller-min.png" id="YLAC"> </a>
                 <div >Content Creator for Social Media Advocacy</div>
             </div>    
 
 
     <!-----------------ashish foundation ------------>        
-            <div class="elements">
-                <a href="#w" onclick="workex(this)" rel="AF"><img src="Images/Ashish%20Foundation.jpeg" id="AF"></a>
-
+            <div class=" col-6 elements">
+             <a href="ashish.html"> <img src="Images/Ashish%20Foundation.jpeg" id="AF"></a>
                 <div >Helping Autistic Children</div>
             </div>
 
-        </div> 
-
-        <div class="rect" id="runicef"><table border=0> <tr><td> <p>  I volunteered with UNICEF Netherlands for its Jordan project which is running currently. Through this project, UNICEF is providing access to education to migrant children in Jordan. As volunteers, our task was to make people aware of this project and raise funds.</p>  </td> <td> 
-
-            <img src="Images/jordan.jpg"></td></tr> 
-            </table>
         </div>
-
-         <div class="rect" style="display: none" id="rpravah"><table border=0> <tr><td><p>  I was selected for the SMILE (Student Mobilisation Initiative for Learning through Exposure) internship of Pravah in 2019. Pravah is a Delhi based organisation which works with young people to impact issues of social justice through youth citizenship action.
-             
-        In this internship, we had a 5-day camp and then sent to different organisations as volunteers. I was sent to Manthan Kotri, Rajasthan; this organisation works mainly on water conservation and with disadvantaged communities. I had to learn about one community in the village and write a report about what I saw and learnt. I also helped the organisation to conduct their annual meet and translate some of their reports from Hindi to English.</p> </td> <td> 
-
-            <img src="Images/pravah1.png"></td></tr> 
-            </table>
-        </div>
-
-        <div class="rect" style="display: none" id="roxfam"> <table border=0> <tr><td><p> I was the Team Manager and fund mobiliser of Team Udayan (Sponsored by NGO Udayan centre for Collaborative Learning). I managed a team of four walkers in terms of their training schedules; diet; logistics; planning; material support and constant field backup for the continuous 33 hours the team was on the road. Two of the team members finished the walk successfully while the others did 50 kilometers. The walk being a fund raiser, I could bring the team among the top 5 teams,  mobilising over 2 Million Rupees through crowd funding. The team was given a special recognition for this.</p>
-            </td> <td> <img src="Images/oxfamwinner.jpg"></td></tr> 
-            </table>
-        </div>
-
-       <div class="rect" style="display: none" id="rYLAC"> <table border=0> <tr><td> <p>  Young Leaders for Active Citizenship (YLAC) is an initiative to build capacity of youngsters through active citizenship on issues like Diversity, Mental wellness-being, Sustainability,Gender Equality, Body Positivity and Bullying. It is driven by eminent citizens like Shashi Tharoor, Jay Panda, and a group of Harvard and Oxford Alumni. I was privileged to have been selected as one of the 30 Counter Speech Fellows after a rigorous selection process from across the country. I was rated as one of the best performers consistently by peers. </p> </td> <td> 
-
-            <img src="Images/ylacwriting.jpg"></td></tr> 
-            </table>
-        </div>
-
-        <div class="rect" style="display: none" id="rAF"><table border=0> <tr><td> <p>Ashish Centre is a vocational school for differently-abled children. The school trains these children and young adults in life skills and vocational training. I volunteered at Ashish centre during the summer break before joining high school. At the centre, I learnt from the facilitators and assisted them with organizing classes and activities. For example, I arranged the individual timetables for each student so that they could keep track of their tasks for the day. I helped conduct activities like colour differentiation, movement exercises for psycho motor skills, and visits to public places to train social interaction skills. I learnt how children on the autistic spectrum have difficulty doing routine tasks and interactions, and that as a society we can do better at accepting and empowering those different from us. </p> </td> <td> 
-
-            <img src="Images/abhi.jpeg"></td></tr> 
-            </table>
-        </div>
-
 
     </section>
 
@@ -196,8 +190,8 @@ through singing and dancing.  </div>
     <!------------Education --------->     
 
     <section class="Education" id="e">
-        <div class="THUAS">
-            <img src="Images/THUAS.png" width="400px">
+        <div class="THUAS col-6">
+            <img src="Images/THUAS.png" style="max-width: 100%">
             <p>2019 <br>
              User Experience <br>
             Bachelor of Science<br>
@@ -205,13 +199,13 @@ through singing and dancing.  </div>
         </div>
 
 
-        <div class="RFS">
-            <img src="Images/Rfs.png" width="400">
+        <div class="RFS col-6">
+            <img src="Images/Rfs.png" style="max-width: 100%">
             <p> 2017-2019<br>
                 High School<br>
                 Mumbai, India</p>
         </div>
-        <div class="downimg"><img src="Images/education.png"></div>
+        <div class="downimg col-4"><img src="Images/education.png" style="max-width: 100%"></div>
         
     </section>
 

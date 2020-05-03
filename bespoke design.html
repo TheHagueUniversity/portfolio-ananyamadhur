@@ -14,31 +14,62 @@
             sections[i].style.height=h+"px";
         }
     }
+        
+        function showmenu() {
+            document.getElementById("mobilemenu").style.display="block";
+            document.getElementById("hbm").src="Images/cancel.png";
+            document.getElementById("hbm").onclick=hidemenu;
+        }
+        
+        function hidemenu() {
+            document.getElementById("mobilemenu").style.display="none"; 
+            document.getElementById("hbm").src="Images/ham.png";
+            document.getElementById("hbm").onclick=showmenu;
+        }
+        
     </script>
 </head>
     
 <body> 
 
     <main>
-        <header>
+        <header id="topmenu">
             <div class="content-wrap">
-                <a class="btn" href="index.html">Home</a>
-                <a class="btn" href="index.html">About Me</a>
-                <a class="btn" href="index.html">Projects</a>
-                <a class="btn" href="index.html">Work Experience</a>
-                <a class="btn" href="index.html">Education</a>
-                <a class="btn" href="index.html">Contact</a>
+                <a class="btn"  href="index.html#h">Home</a>
+                <a class="btn"  href="index.html#abt">About Me</a>
+                <a class="btn"  href="index.html#p">Projects</a>
+                <a class="btn"  href="index.html#w">Work Experience</a>
+                <a class="btn"  href="index.html#e">Education</a>
+                <a class="btn"  href="index.html#c">Contact</a>
             </div>
 
         </header>
+        
+<!------------- Mobile menu ----------------->
+    <div class="mobile-container">
+            <img src="Images/ham.png" id="hbm" height="100" width="100" onclick="showmenu()" style="cursor: pointer">
+                <div id="mobilemenu"> 
+                    <ul>
+                        <li><a class="btn"  href="index.html#home">Home</a></li>
+                        <li><a class="btn"  href="index.html#aboutme">About Me</a></li>
+                        <li><a class="btn"  href="index.html#projects">Projects</a></li>
+                        <li><a class="btn"  href="index.html#workexp">Work Experience</a></li>
+                        <li><a class="btn"  href="index.html#education">Education</a></li>
+                        <li><a class="btn"  href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+        </div>    
+        
+        
       <section class="bespoke-design" id="bes">
     <div class="project-box"> 
             
             
 <!-------------- bespoke project------------>            
             
-            <div class="thumbnail" style="transform-origin: center center; transform: scale(1.5,1.5)">
-                <a href="bespoke%20design.html"><img src="Images/bespoke.png"> </a>
+            <div class="thumbnail col-5" style="transform-origin: center center; transform: scale(1.5,1.5)">
+                <a href="bespoke%20design.html"><img src="Images/bespoke.png" style="max-width: 80% ; max-height: 100%"> </a>
                 <div> Bespoke design </div>
             </div>
         
@@ -46,16 +77,16 @@
             
 <!-------------------- DC --------------------->
             
-            <div class="thumbnail">
-                <a href="design%20and%20creativity.html"><img src="Images/dc.png"></a>
+            <div class="thumbnail col-5">
+                <a href="design%20and%20creativity.html"><img src="Images/dc.png" style="max-width: 80% ; max-height: 100%"></a>
                 <div>Design and Creativity</div>
             </div>
             
 
  <!---------------------- IC------------------------>
             
-            <div class="thumbnail">
-                <a href="intercultural%20competence.html"><img src="Images/IC.png"></a>
+            <div class="thumbnail col-5">
+                <a href="intercultural%20competence.html"><img src="Images/IC.png" style="max-width: 80% ; max-height: 100%"></a>
                 <div>Intercultural Competence</div>
             </div>
         
@@ -63,8 +94,8 @@
         
 <!---------------- Ylac project ---------------------->
         
-          <div class="thumbnail">
-              <a href="YLAC.html"><img src="Images/ylac.jpg"></a>
+          <div class="thumbnail col-5">
+              <a href="YLAC.html"><img src="Images/ylac.jpg" style="max-width: 80% ; max-height: 100%"></a>
                 <div>Awareness on social issues</div>
             </div>
         </div> 
@@ -80,28 +111,28 @@ tool and my partner designed the digital unwrapping.<br><br>
 <b>The Design Process:</b><br>
 There are 5 phases in the design process. The phases are; Empathise: Define: Ideate: Prototype and Test.</p><br><br>
 
-<img src="Images/designprocess.png" width="500px" class="firsttwo"><br><br>
+<img src="Images/designprocess.png" width="500px" class="firsttwo col-5"><br><br>
          
 <h1 style="text-align: justify">Empathise</h1> 
 <p style="text-align: justify">I started understanding the values and aesthetic preferences of the user through personal interactions, 
     interviews and games</p> <br><br>
 
-<img src="Images/usertrial.png" width="500px" class="firsttwo"><br><br>
+<img src="Images/usertrial.png" width="500px" class="firsttwo col-5"><br><br>
          
          
 <h1 style="text-align: justify">Prototype</h1> 
-<img src="Images/prototype.png" width="500px" >
-<img src="Images/prototype2.png" width="500px"> <br>
+<img src="Images/prototype.png" width="500px" class="col-5" >
+<img src="Images/prototype2.png" width="500px" class="col-5"> <br>
 I started with paper prototyping to see where and how should my elements 
 be placed <br><br><br>
-<img src="Images/landingpage.png" width="1000px"class="all"><br>
+<img src="Images/landingpage.png" width="1000px"class="all col-5"><br>
 Landing page <br><br><br>
          
-<img src="Images/secondpage.png" width="1000px"class="all"> <br><br>
-<img src="Images/cardtemplate.png" width="1000px"class="all"><br>
+<img src="Images/secondpage.png" width="1000px"class="all col-5"> <br><br>
+<img src="Images/cardtemplate.png" width="1000px"class="all col-5"><br>
 Template of the card <br><br><br>
          
-<img src="Images/finalcard.png" width="1000px" class="all"><br>
+<img src="Images/finalcard.png" width="1000px" class="all col-5"><br>
 Final card sample<br><br>
           
 <i>Click here for prototype: </i>
