@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="Styles.css">
     <script> 
     function resize() {
-        var h=window.innerHeight;
+        var h=window.innerHeight + "px";
+        if(window.innerWidth<800) h="auto";
         var sections=document.getElementsByTagName("section");
         for (i=0;i<sections.length;i++) {
-            sections[i].style.height=h+"px";
+            sections[i].style.height=h;
         }
-    }
+    } 
         function showmenu() {
             document.getElementById("mobilemenu").style.display="block";
             document.getElementById("hbm").src="Images/cancel.png";

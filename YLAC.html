@@ -7,13 +7,22 @@
     <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styles.css">
     <script> 
-    function resize() {
+    /*function resize() {
         var h=window.innerHeight;
         var sections=document.getElementsByTagName("section");
         for (i=0;i<sections.length;i++) {
             sections[i].style.height=h+"px";
         }
-    }
+    }*/
+        function resize() {
+        var h=window.innerHeight + "px";
+        if(window.innerWidth<800) h="auto";
+        var sections=document.getElementsByTagName("section");
+        for (i=0;i<sections.length;i++) {
+            sections[i].style.height=h;
+        }
+    } 
+
         
         function showmenu() {
             document.getElementById("mobilemenu").style.display="block";
